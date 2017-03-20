@@ -1,5 +1,5 @@
 import React from 'react';
-import MDSpinner from './lib/MDSpinner';
+import MDSpinner from './components/MDSpinner';
 
 export {
     MDSpinner
