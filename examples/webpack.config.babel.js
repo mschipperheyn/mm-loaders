@@ -20,7 +20,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.NoErrorsPlugin()
+    new webpack.NoEmitErrorsPlugin()
   ],
   devServer: {
     contentBase: __dirname
