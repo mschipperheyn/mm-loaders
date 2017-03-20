@@ -1,167 +1,31 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/Users/marcschipperheijn/.nvm/versions/node/v6.1.0/bin/node',
 1 verbose cli   '/Users/marcschipperheijn/.nvm/versions/node/v6.1.0/bin/npm',
-1 verbose cli   'publish',
-1 verbose cli   './',
-1 verbose cli   '--tag',
-1 verbose cli   'beta' ]
+1 verbose cli   'version',
+1 verbose cli   '0.0.1-4',
+1 verbose cli   '-m',
+1 verbose cli   'Attempting to fix a mistake with package numbering' ]
 2 info using npm@3.9.6
 3 info using node@v6.1.0
-4 verbose publish [ './' ]
-5 silly cache add args [ './', null ]
-6 verbose cache add spec ./
-7 silly cache add parsed spec Result {
-7 silly cache add   raw: './',
-7 silly cache add   scope: null,
-7 silly cache add   name: null,
-7 silly cache add   rawSpec: './',
-7 silly cache add   spec: '/Users/Shared/java/projects/react/projects/react-loaders',
-7 silly cache add   type: 'directory' }
-8 verbose addLocalDirectory /Users/marcschipperheijn/.npm/mm-loaders/0.0.1/package.tgz not in flight; packing
-9 verbose correctMkdir /Users/marcschipperheijn/.npm correctMkdir not in flight; initializing
-10 info lifecycle mm-loaders@0.0.1~prepublish: mm-loaders@0.0.1
-11 verbose lifecycle mm-loaders@0.0.1~prepublish: unsafe-perm in lifecycle true
-12 verbose lifecycle mm-loaders@0.0.1~prepublish: PATH: /Users/marcschipperheijn/.nvm/versions/node/v6.1.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/Shared/java/projects/react/projects/react-loaders/node_modules/.bin:/Users/marcschipperheijn/.nvm/versions/node/v6.1.0/bin:/Users/marcschipperheijn/.nvm/versions/node/v6.1.0/bin:/Users/marcschipperheijn/.rbenv/shims:/Users/marcschipperheijn/.fastlane/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/opt/X11/bin:/usr/local/git/bin
-13 verbose lifecycle mm-loaders@0.0.1~prepublish: CWD: /Users/Shared/java/projects/react/projects/react-loaders
-14 silly lifecycle mm-loaders@0.0.1~prepublish: Args: [ '-c', 'npm run build' ]
-15 silly lifecycle mm-loaders@0.0.1~prepublish: Returned: code: 0  signal: null
-16 verbose tar pack [ '/Users/marcschipperheijn/.npm/mm-loaders/0.0.1/package.tgz',
-16 verbose tar pack   '/Users/Shared/java/projects/react/projects/react-loaders' ]
-17 verbose tarball /Users/marcschipperheijn/.npm/mm-loaders/0.0.1/package.tgz
-18 verbose folder /Users/Shared/java/projects/react/projects/react-loaders
-19 verbose addLocalTarball adding from inside cache /Users/marcschipperheijn/.npm/mm-loaders/0.0.1/package.tgz
-20 verbose correctMkdir /Users/marcschipperheijn/.npm correctMkdir not in flight; initializing
-21 silly cache afterAdd mm-loaders@0.0.1
-22 verbose afterAdd /Users/marcschipperheijn/.npm/mm-loaders/0.0.1/package/package.json not in flight; writing
-23 verbose correctMkdir /Users/marcschipperheijn/.npm correctMkdir not in flight; initializing
-24 verbose afterAdd /Users/marcschipperheijn/.npm/mm-loaders/0.0.1/package/package.json written
-25 silly publish { name: 'mm-loaders',
-25 silly publish   description: 'Small, beautiful svg based loaders',
-25 silly publish   author: { name: 'Marc Schipperheyn', url: 'm.schipperheyn@gmail.com' },
-25 silly publish   user: 'mschipperheyn',
-25 silly publish   version: '0.0.1',
-25 silly publish   scripts:
-25 silly publish    { start: 'cross-env NODE_ENV=development webpack-dev-server --config examples/webpack.config.babel.js --hot',
-25 silly publish      build: 'npm run build:lib && npm run build:dist',
-25 silly publish      'prebuild:lib': 'rm -rf lib/*',
-25 silly publish      'build:lib': 'babel --out-dir lib src',
-25 silly publish      'prebuild:umd': 'rm -rf dist/*',
-25 silly publish      'prebuild:dist': 'rm -rf dist/*',
-25 silly publish      'build:dist': 'rollup -c && cross-env NODE_ENV=production rollup -c',
-25 silly publish      'build:watch': 'npm run build:lib -- --watch',
-25 silly publish      test: 'jest',
-25 silly publish      'test:watch': 'jest --watch',
-25 silly publish      'test:lint': 'eslint . --ext .js --ext .jsx --ignore-path .gitignore --ignore-pattern dist --cache',
-25 silly publish      'demo:build': 'cross-env NODE_ENV=production webpack --config demo/webpack.config.babel.js',
-25 silly publish      lint: 'eslint \'src/**/*.js\'',
-25 silly publish      prepublish: 'npm run build' },
-25 silly publish   main: 'dist-modules',
-25 silly publish   module: 'src',
-25 silly publish   'jsnext:main': 'dist/mm-loaders.js',
-25 silly publish   dependencies: { 'styled-components': '>=1.2.0' },
-25 silly publish   devDependencies:
-25 silly publish    { 'babel-cli': '^6.24.0',
-25 silly publish      'babel-core': '^6.24.0',
-25 silly publish      'babel-loader': '^6.4.1',
-25 silly publish      'babel-plugin-external-helpers': '^6.22.0',
-25 silly publish      'babel-plugin-transform-object-rest-spread': '^6.23.0',
-25 silly publish      'babel-preset-es2015': '^6.24.0',
-25 silly publish      'babel-preset-react': '^6.23.0',
-25 silly publish      'babel-preset-react-hmre': '^1.1.1',
-25 silly publish      chai: '^3.5.0',
-25 silly publish      'cross-env': '^3.2.4',
-25 silly publish      eslint: '^3.17.1',
-25 silly publish      'eslint-config-standard': '^7.0.1',
-25 silly publish      'eslint-config-standard-react': '^4.3.0',
-25 silly publish      'eslint-plugin-promise': '^3.5.0',
-25 silly publish      'eslint-plugin-react': '^6.10.0',
-25 silly publish      'eslint-plugin-standard': '^2.1.1',
-25 silly publish      'html-loader': '^0.4.5',
-25 silly publish      react: '^15.4.2',
-25 silly publish      'react-dom': '^15.4.2',
-25 silly publish      rollup: '^0.41.6',
-25 silly publish      'rollup-plugin-babel': '^2.7.1',
-25 silly publish      'rollup-plugin-commonjs': '^8.0.2',
-25 silly publish      'rollup-plugin-node-resolve': '^2.0.0',
-25 silly publish      'rollup-plugin-uglify': '^1.0.1',
-25 silly publish      'rollup-plugin-visualizer': '^0.2.0',
-25 silly publish      webpack: '^2.2.1',
-25 silly publish      'webpack-dev-server': '^2.4.2',
-25 silly publish      'webpack-hot-middleware': '^2.17.1' },
-25 silly publish   peerDependencies: { react: '^15.4.2', 'react-dom': '^15.4.2' },
-25 silly publish   repository:
-25 silly publish    { type: 'git',
-25 silly publish      url: 'git+https://github.com/mschipperheyn/mm-loaders.git' },
-25 silly publish   homepage: 'https://github.com/mschipperheyn/mm-loaders/',
-25 silly publish   bugs: { url: 'https://github.com/mschipperheyn/mm-loaders/issues' },
-25 silly publish   jest:
-25 silly publish    { collectCoverage: true,
-25 silly publish      moduleFileExtensions: [ 'js', 'jsx' ],
-25 silly publish      moduleDirectories: [ 'node_modules', 'packages' ] },
-25 silly publish   keywords: [ 'react', 'reactjs', 'mm-loaders' ],
-25 silly publish   license: 'MIT',
-25 silly publish   'pre-push': [ 'test' ],
-25 silly publish   readme: '[![build status](https://secure.travis-ci.org/mschipperheyn/mm-loaders.svg)](http://travis-ci.org/mschipperheyn/mm-loaders) [![bitHound Score](https://www.bithound.io/github/mschipperheyn/mm-loaders/badges/score.svg)](https://www.bithound.io/github/mschipperheyn/mm-loaders) [![Dependency Status](https://david-dm.org/mschipperheyn/mm-loaders.svg)](https://david-dm.org/mschipperheyn/mm-loaders)\n\n# mm-loaders\n\nMM Loaders are light weight loaders based on svg and css, using [Styled Components](https://github.com/styled-components/styled-components) to render the css.\n\nBased on a number of sources on svg loaders, e.g. https://codepen.io/mrrocks/pen/EiplA\n\n<img alt="spinner" src="./docs/assets/mdspinner.gif" height="110px" />\n\n## Usage\n\n### Installation\n\n`npm install mm-loaders`\n\n`yarn add mm-loaders`\n\n### MDSpinner\n\nA circular Material Design Spinner\n\n- `colors`: (array), default: [\'#4285F4\', \'#DE3E35\', \'#F7C223\', \'#1B9A59\', \'#4285F4\']\n- `width`: (number), default: 65\n- `height`: (number), default: 65\n- `borderWidth`: (number), default: 6\n\n```JSX\nimport React from \'react\';\n\nimport MDSpinner from \'mm-loaders/lib/MDSpinner\';\n\nconst Example = () => {\n    return (\n        <MDSpinner/>        \n    );\n};\n\nexport default Example;\n```\n\n## License\n\n*mm-loaders* is available under MIT. See LICENSE for more details.\n',
-25 silly publish   readmeFilename: 'README.md',
-25 silly publish   gitHead: '5351408942390af8e7aa70e20eee45191b79653a',
-25 silly publish   _id: 'mm-loaders@0.0.1',
-25 silly publish   _shasum: '2172fb39ad242baa6a3555b504abb0a5f02ec122',
-25 silly publish   _from: '.' }
-26 verbose getPublishConfig undefined
-27 silly mapToRegistry name mm-loaders
-28 silly mapToRegistry using default registry
-29 silly mapToRegistry registry http://registry.npmjs.org/
-30 silly mapToRegistry data Result {
-30 silly mapToRegistry   raw: 'mm-loaders',
-30 silly mapToRegistry   scope: null,
-30 silly mapToRegistry   name: 'mm-loaders',
-30 silly mapToRegistry   rawSpec: '',
-30 silly mapToRegistry   spec: 'latest',
-30 silly mapToRegistry   type: 'tag' }
-31 silly mapToRegistry uri http://registry.npmjs.org/mm-loaders
-32 verbose publish registryBase http://registry.npmjs.org/
-33 silly publish uploading /Users/marcschipperheijn/.npm/mm-loaders/0.0.1/package.tgz
-34 verbose request uri http://registry.npmjs.org/mm-loaders
-35 verbose request sending authorization for write operation
-36 info attempt registry request try #1 at 4:00:08 PM
-37 verbose request using bearer token for auth
-38 verbose request id 001ec8a0fcd6e0b8
-39 http request PUT http://registry.npmjs.org/mm-loaders
-40 http 403 http://registry.npmjs.org/mm-loaders
-41 verbose headers { 'content-type': 'application/json',
-41 verbose headers   'cache-control': 'max-age=300',
-41 verbose headers   'content-length': '95',
-41 verbose headers   'accept-ranges': 'bytes',
-41 verbose headers   date: 'Mon, 20 Mar 2017 19:00:11 GMT',
-41 verbose headers   via: '1.1 varnish',
-41 verbose headers   connection: 'keep-alive',
-41 verbose headers   'x-served-by': 'cache-gru7120-GRU',
-41 verbose headers   'x-cache': 'MISS',
-41 verbose headers   'x-cache-hits': '0',
-41 verbose headers   'x-timer': 'S1490036409.648382,VS0,VE1596',
-41 verbose headers   vary: 'Accept-Encoding' }
-42 verbose request invalidating /Users/marcschipperheijn/.npm/registry.npmjs.org/mm-loaders on PUT
-43 error publish Failed PUT 403
-44 verbose stack Error: "You cannot publish over the previously published version 0.0.1." : mm-loaders
-44 verbose stack     at makeError (/Users/marcschipperheijn/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
-44 verbose stack     at CachingRegistryClient.<anonymous> (/Users/marcschipperheijn/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
-44 verbose stack     at Request._callback (/Users/marcschipperheijn/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
-44 verbose stack     at Request.self.callback (/Users/marcschipperheijn/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:200:22)
-44 verbose stack     at emitTwo (events.js:106:13)
-44 verbose stack     at Request.emit (events.js:191:7)
-44 verbose stack     at Request.<anonymous> (/Users/marcschipperheijn/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:1067:10)
-44 verbose stack     at emitOne (events.js:101:20)
-44 verbose stack     at Request.emit (events.js:188:7)
-44 verbose stack     at IncomingMessage.<anonymous> (/Users/marcschipperheijn/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:988:12)
-45 verbose statusCode 403
-46 verbose pkgid mm-loaders
-47 verbose cwd /Users/Shared/java/projects/react/projects/react-loaders
-48 error Darwin 15.6.0
-49 error argv "/Users/marcschipperheijn/.nvm/versions/node/v6.1.0/bin/node" "/Users/marcschipperheijn/.nvm/versions/node/v6.1.0/bin/npm" "publish" "./" "--tag" "beta"
-50 error node v6.1.0
-51 error npm  v3.9.6
-52 error code E403
-53 error "You cannot publish over the previously published version 0.0.1." : mm-loaders
-54 error If you need help, you may report this error at:
-54 error     <https://github.com/npm/npm/issues>
-55 verbose exit [ 1, true ]
+4 info git [ 'status', '--porcelain' ]
+5 verbose stack Error: Git working directory not clean.
+5 verbose stack M .gitignore
+5 verbose stack     at /Users/marcschipperheijn/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/version.js:246:19
+5 verbose stack     at ChildProcess.exithandler (child_process.js:193:7)
+5 verbose stack     at emitTwo (events.js:106:13)
+5 verbose stack     at ChildProcess.emit (events.js:191:7)
+5 verbose stack     at maybeClose (internal/child_process.js:850:16)
+5 verbose stack     at Socket.<anonymous> (internal/child_process.js:323:11)
+5 verbose stack     at emitOne (events.js:96:13)
+5 verbose stack     at Socket.emit (events.js:188:7)
+5 verbose stack     at Pipe._handle.close [as _onclose] (net.js:492:12)
+6 verbose cwd /Users/Shared/java/projects/react/projects/react-loaders
+7 error Darwin 15.6.0
+8 error argv "/Users/marcschipperheijn/.nvm/versions/node/v6.1.0/bin/node" "/Users/marcschipperheijn/.nvm/versions/node/v6.1.0/bin/npm" "version" "0.0.1-4" "-m" "Attempting to fix a mistake with package numbering"
+9 error node v6.1.0
+10 error npm  v3.9.6
+11 error Git working directory not clean.
+11 error M .gitignore
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]
