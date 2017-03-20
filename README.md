@@ -6,6 +6,8 @@ MM Loaders are light weight loaders based on svg and css, using [Styled Componen
 
 Based on a number of sources on svg loaders, e.g. https://codepen.io/mrrocks/pen/EiplA
 
+<img alt="spinner" src="./docs/assets/mdspinner.gif" height="110px" />
+
 ## Usage
 
 ### Installation
