@@ -28,7 +28,7 @@ A circular Material Design Spinner
 ```JSX
 import React from 'react';
 
-import MDSpinner from 'mm-loaders/lib/md-spinner';
+import MDSpinner from 'mm-loaders/lib/MDSpinner';
 
 const Example = () => {
     return (
