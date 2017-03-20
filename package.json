@@ -20,7 +20,7 @@
     "lint": "eslint 'src/**/*.js'",
     "prepublish": "npm run build"
   },
-  "main": "dist-modules",
+  "main": "lib/index.js",
   "module": "src",
   "jsnext:main": "dist/mm-loaders.js",
   "dependencies": {
