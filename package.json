@@ -3,7 +3,12 @@
   "description": "Small, beautiful svg based loaders",
   "author": "Marc Schipperheyn (m.schipperheyn@gmail.com)",
   "user": "mschipperheyn",
-  "version": "0.0.1-5",
+  "version": "0.0.1-7",
+  "keywords": [
+    "react",
+    "loader",
+    "styled-components"  
+  ],
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config examples/webpack.config.babel.js --hot",
     "build": "npm run build:lib && npm run build:dist",
@@ -20,7 +25,7 @@
     "lint": "eslint 'src/**/*.js'",
     "prepublish": "npm run build"
   },
-  "main": "dist-modules",
+  "main": "lib/index.js",
   "module": "src",
   "jsnext:main": "dist/mm-loaders.js",
   "dependencies": {
