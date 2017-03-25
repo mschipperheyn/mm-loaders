@@ -3,7 +3,7 @@
   "description": "Small, beautiful svg based loaders",
   "author": "Marc Schipperheyn (m.schipperheyn@gmail.com)",
   "user": "mschipperheyn",
-  "version": "0.0.1-8",
+  "version": "0.0.1-9",
   "keywords": [
     "react",
     "loader",
