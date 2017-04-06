@@ -3,7 +3,7 @@
   "description": "Small, beautiful svg based loaders",
   "author": "Marc Schipperheyn (m.schipperheyn@gmail.com)",
   "user": "mschipperheyn",
-  "version": "0.0.1-9",
+  "version": "0.0.1-10",
   "keywords": [
     "react",
     "loader",
@@ -28,8 +28,8 @@
   "main": "lib/index.js",
   "module": "dist/mm-loaders.es.js",
   "jsnext:main": "dist/mm-loaders.es.js",
-  "dependencies": {
-    "styled-components": ">=1.2.0"
+  "peerDependencies": {
+    "styled-components": ">=1.0 || <3.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
