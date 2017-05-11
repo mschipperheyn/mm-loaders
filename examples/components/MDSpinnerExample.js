@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import MDSpinner from '../../src/components/md-spinner';
+import MDSpinner from '../../src/components/MDSpinner';
 
 const FlexBox = styled.div`
     height:100vh;

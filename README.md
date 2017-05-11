@@ -39,6 +39,10 @@ const Example = () => {
 export default Example;
 ```
 
+## Run examples
+
+Run `npm run build:demo` and open the `index.html` file.
+
 ## License
 
 *mm-loaders* is available under MIT. See LICENSE for more details.

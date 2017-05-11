@@ -19,9 +19,6 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new webpack.NoEmitErrorsPlugin()
-  ],
   devServer: {
     contentBase: __dirname
   }
