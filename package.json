@@ -3,7 +3,7 @@
   "description": "Small, beautiful svg based loaders",
   "author": "Marc Schipperheyn (m.schipperheyn@gmail.com)",
   "user": "mschipperheyn",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": [
     "react",
     "reactjs",
@@ -33,7 +33,7 @@
     "react-dom": "^15.4.2"
   },
   "dependencies" :{
-    "styled-components": ">2.0.0-1 || ^1"
+    "styled-components": ">2.0.0 || ^1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
